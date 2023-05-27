@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="pagina2.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de Registro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <!-- Agrega más enlaces si es necesario -->
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Registro</h2>
+        <form action="procesar_registro.php" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Dirección de correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Número de teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="ocupacion">Ocupación:</label>
+            <input type="text" id="ocupacion" name="ocupacion" required>
+
+            <label for="categoria">Categoría de participación:</label>
+            <select id="categoria" name="categoria">
+                <option value="Estudiante">Estudiante</option>
+                <option value="Profesional">Profesional</option>
+                <option value="Investigador">Investigador</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <input type="submit" value="Enviar formulario">
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 Uriel Alejandro Ruiz </p>
+    </footer>
+</body>
+
+</html>
