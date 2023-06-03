@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi página con ejercicios</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <section id="javascript-section">
+        <h2>Ejercicio 1: Palíndromo</h2>
+        <ul>
+            <li><a href="#" onclick="checkPalindrome()">Comprobar si es un palíndromo</a></li>
+        </ul>
+        <h2>Ejercicio 2: Números mayores</h2>
+        <ul>
+            <li><a href="#" onclick="findLargestNumber()">Encontrar el número mayor</a></li>
+        </ul>
+        <h2>Ejercicio 3: Vocales en una frase</h2>
+        <ul>
+            <li><a href="#" onclick="findVowels()">Encontrar las vocales en una frase</a></li>
+        </ul>
+        <h2>Ejercicio 4: Conteo de vocales</h2>
+        <ul>
+            <li><a href="#" onclick="countVowels()">Contar las vocales en una frase</a></li>
+        </ul>
+    </section>
+
+    <h1>Ejercicio AJAX</h1>
+    <section id="ajax-section">
+        <label for="url-input">URL:</label>
+        <input type="text" id="url-input" value="https://www.ejemplo.com">
+        <button onclick="loadContent()">Mostrar Contenidos</button>
+
+        <h2>Estados de la petición:</h2>
+        <div id="request-status"></div>
+
+        <h2>Cabeceras HTTP de la respuesta:</h2>
+        <div id="response-headers"></div>
+
+        <h2>Código de estado:</h2>
+        <div id="status-code"></div>
+
+        <h2>Contenidos del archivo:</h2>
+        <div id="file-contents"></div>
+    </section>
+</body>
+
+</html>
